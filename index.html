@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Istiklal Homes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" defer>
+
+  <!--- bootsrap 5-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css"
+    integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+
+  <!--- font awesome --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.css"
+    integrity="sha512-0vp5NeGSXVyVhWa/BuqCPMno6cznsCS/e1qIYhfSR1yPj5bqiyVjpDsSN69DYrZa2zXjpD1dd15/MekBvhspig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="bg-white p-md-2">
+    <div class="container">
+
+        <div class="row flex-wrap">
+          <div class="col-md-1 col-xs-4">
+            <div class="header-logo">
+              <a class="" href="#">
+                <img class="img-fluid website-logo mt-3" src="images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+
+            <div class="navbar-button">
+              <button id="nav-btn" class="btn btn-outline-primary text-warn-hover "> <i class="fa-solid fa-bars"></i> </button>
+            </div>
+         
+          </div>
+
+          <div class="col-md-11 col-xs-8">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="toper d-flex w-100 mt-3 mb-3">
+
+
+                  <form class="position-relative">
+                    <input class="form-control me-2 general-search text-center" type="search" placeholder="Search..."
+                      aria-label="Search">
+                    <span class="postion-absolute icon-search text-primary">
+                      <i class="fa-solid fa-search text-warn-hover"></i>
+                    </span>
+                  </form>
+
+                  <div class="mobile-side d-flex ">
+                    <div class="mx-2">
+                      <button class="btn btn-outline-primary text-warn-hover "> <i class="fa-solid fa-globe"></i>
+                      </button>
+                    </div>
+
+                    <div class="mx-2">
+
+                      <button class="btn btn-outline-primary text-warn-hover"> <i class="fa-solid fa-dollar-sign"></i>
+                      </button>
+                    </div>
+                    <div class="mx-2 social-media">
+
+                      <div class="border border-1  border-primary rounded">
+                        <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                            class="fa-brands fa-facebook-f"></i> </a> <a href="#"
+                          class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                            class="fa-brands fa-instagram"></i> </a> <a href="#"
+                          class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                            class="fa-brands fa-youtube"></i> </a> <a href="#"
+                          class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                            class="fa-brands fa-facebook-messenger"></i> </a>
+                      </div>
+                    </div>
+
+
+
+                    <div class="dropdown mx-2 px-xl-3">
+                      <button class="pt-1 btn btn-outline-primary dropdown-toggle text-warn-hover" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="account"> My account</span>
+                        <i class="fa-solid fa-user"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <nav id="site-navbar">
+              <i id="close-drop" class="fa-solid fa-circle-arrow-left text-danger"></i>
+
+              <ul class="list-unstyled" id="main-nav"> 
+              
+                <li class=""><a href="#"> Home</a></li>
+                <li class=""><a href="#proj"> Projects</a></li>
+                <li class=""><a href="#contact"> Contact</a></li>
+                <li class=""><a href="#testimonials"> testimonials</a></li>
+                <li class=""><a href="#testimonials"> Blog</a></li>
+                <li class=""><a href="#testimonials"> About</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Istiklal Homes
+                  </a>
+           
+                  <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      
+
+    </div>
+
+  </header>
+
+  <!--- Header --->
+
+
+  <div class="page-content mt-3">
+    <div class="container">
+
+      <div class="content row">
+        <div class="said col-lg-3">
+          <div class="said-content px-3 py-2 bg-white hado_border hado_box_shadow">
+            <h4 class="p-10 fw-bold mx-4 mt-3 text-center"> search for your apartment</h4>
+            <div class="dropdowns">
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">choose city </button>
+                <ul class="dropdown-menu scroller" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">istanbul</a></li>
+                  <li><a class="dropdown-item" href="#">trabzon</a></li>
+                  <li><a class="dropdown-item" href="#">ankara</a></li>
+                  <li><a class="dropdown-item" href="#">bursa</a></li>
+                  <li><a class="dropdown-item" href="#">antalia</a></li>
+                  <li><a class="dropdown-item" href="#">mugla</a></li>
+                  <li><a class="dropdown-item" href="#">istanbul</a></li>
+                  <li><a class="dropdown-item" href="#">trabzon</a></li>
+                  <li><a class="dropdown-item" href="#">ankara</a></li>
+                  <li><a class="dropdown-item" href="#">bursa</a></li>
+                  <li><a class="dropdown-item" href="#">antalia</a></li>
+                  <li><a class="dropdown-item" href="#">mugla</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">choos twon </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">choos type</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">choos additional </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="rangs mt-4 mb-2 text-center">
+
+              <div class="range">
+                <label for="customRange2" class="form-label d-block">price</label>
+                <input type="range" min="10" max="1000" step="10" value="300" data-orientation="vertical">
+
+              </div>
+
+              <div class="range">
+                <label for="customRange2" class="form-label d-block">space</label>
+                <input type="range" min="10" max="1000" step="10" value="300" data-orientation="vertical">
+
+              </div>
+
+            </div>
+
+            <button class="btn btn-primary mt-3 mb-5 btn-block w-100">search</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 col-md-12 col-xs-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner hado_border">
+              <div class="carousel-item active">
+                <img src="images/property-2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/123.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/123.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="row sections mt-3 ">
+            <div class="col-12 col-lg-4 ">
+              <div class="section bg-white text-center mb-3 p-3 hado_border hado_box_shadow">
+                <h5 class="fw-bold">Client Testimonials
+                </h5>
+                <p class="fs-6 h-50px">Customer Reviews About Imtilak Services
+                </p>
+                <a class="btn btn-primary mt-2 btn-block w-100" href="#">know what they said</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="section bg-white text-center mb-3 p-3 hado_border hado_box_shadow"">
+                <h5 class="fw-bold">FAQS</h5>
+                <p class="fs-6 h-50px">Q&A Section About Everything Regarding Turkey's Real Estate
+                </p>
+                <a class="btn btn-primary mt-2 btn-block w-100" href="#">FAQS</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="section bg-white text-center mb-3 p-3 hado_border hado_box_shadow">
+                <h5 class="fw-bold">Imtilak Blog</h5>
+                <p class="fs-6 h-50px">Turkey And Real Estate News
+                </p>
+                <a class="btn btn-primary mt-2 btn-block w-100" href="#">Imtilak Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="proj" class="featured_proj bg-white my-3 p-3 hado_border hado_box_shadow">
+        <h2 class="text-primary fw-bold"> Featured Project</h2>
+        <p class="mt-3">See The Best Real Estate For Sale In Turkey At Cheap Prices And Suitable For Real Estate Investment In The Best Real Estate Projects And The Most Important Investment Areas</p>
+
+        <div class="owl-carousel">
+          <div class="card">
+            <img src="images/real.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title mb-2 fw-bold">Galaxy Tower Project IMT-160</h5>
+                <div class="mt-3"><i class="fa-solid fa-location text-secondary"></i> <span class="text-primary"> Istanbul,Yeni bosna </span> <i class="fa-solid fa-house-user text-secondary"></i> <span class="text-primary"> Apartment </span></div>
+                <p class="card-text mt-3 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury designs and installments fo....</p>
+                <p> Starting at <br/> <b class="text-primary fs-4"> 35.000 $</b></p>
+              </div>
+        </div>
+        </div>
+      
+      <button class="btn btn-primary mt-3 mb-2 btn-block w-100">View more </button>
+      </section>
+     
+      <section id="testimonials" class="testimonials bg-white my-3 p-3 hado_border hado_box_shadow">
+        <h2 class="text-primary fw-bold">Testimonials</h2>
+        <p class="mt-3">Day after day, the testimonials of customers continue to draw the true picture of the integrated services provided by Imtilak Real Estate before and after the sale through its experienced and trained staff. For us at Imtilak Real Estate, we see them as a source of pride and honor</p>
+        <br/>
+        <div class="owl-carousel">
+          <div class="card bg-gray">
+           <div class="row px-3 mt-3">
+             <div class="col-md-3">
+              <img src="images/clients.jpg" class="img-avatar rounded-circle" height="75">
+             </div>
+             <div class="col-md-9">
+              <h5 class="text-dark mt-2 mb-1 fw-bold"> Alena Rony</h5>
+              <span class="text-primary h6"> USA </span>
+             </div>
+             
+           </div>
+            <div class="card-body">
+                <p class="card-text mt-3 mb-2">
+                  Due to what Imtilak has of high reliability and a good reputation, I decided to deal with them and buy a property in Turkey while I live in Qatar. Imtilak carried out all the purchasing procedures and the contract was signed and sent by e-mail.
+                </p>
+                
+              </div>
+              <button class="btn btn-primary btn-block w-100">View more </button>
+        </div>
+        </div>
+      
+  
+      </section>
+      <section id="turk-props"  class="turk-props bg-white my-3 p-3 hado_border hado_box_shadow">
+        <h4>Turkey Properties</h4>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="height-img">
+              <a href="#" >
+                <h5 class="text-center text-white fw-bold middle-title">Istanbul</h5>
+                <div class="overlay"></div>
+                <img src="images/istan.jpg" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 ">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-12">
+                <div class="my-2 width-img">
+                  <h5 class="text-center text-white fw-bold middle-title">Izmir</h5>
+                  <div class="overlay"></div>
+
+                  <a href="#"><img src="images/izmir.jpg" class="img-fluid"></a>
+                </div>
+              </div>
+           
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </section>
+      <!-- <section class="blog bg-white my-3 p-3 hado_border hado_box_shadow">
+        <div>
+          <h2 class="text-primary fw-bold">Istiklal blog</h2>
+          <p>
+            Interesting articles and news: documented information about the real estate market and daily life in Turkey, interesting topics for the real estate investor, provided to you by Istklal Real Estate</p>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4">
+            <div>
+              <a href="#"><img src="" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+  </div>
+    <!--- footer --->
+  <footer id="contact" class="mt-3">
+    <section  class="subscripe bg-secondary p-3">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-white text-capitalize mt-3 h3">Subscribe To Our Newsletter</h4>
+          <p class="text-white mt-3 mb-2 h5">Find more about the latest real estate offers</p>
+          <div class="col-lg-6 offset-lg-3 col-md-12">
+            <form>
+              <div class="input-group mb-4 mt-4">
+              <input type="text" class="form-control" placeholder="your email here " />
+              <button class="btn btn-primary">subscripe</button>
+            </div>
+            </form>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="copyright bg-primary  p-2">
+      <div class="container">
+        <div class="text-center">
+   
+          <p class="text-white mt-3 lead">
+            All Rights Reserved for Istiklal Homes -  Istiklal Homes  © 2022 
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+
+  <!--- footer --->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
+    integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--- font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
