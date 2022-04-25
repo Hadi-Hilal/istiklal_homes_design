@@ -1,26 +1,46 @@
 $(document).ready(function(){
 
+    $( "#tabs" ).tabs();
+
+    $( "#tabs-services" ).tabs();
+
+    $( "#tabs-vertical" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs-vertical li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+    $( "#accordion" ).accordion();
     //botsrap price slider
     // With JQuery
     $('.owl-carousel').owlCarousel({
       
         loop:true,
-        margin:15,
+        margin:10,
         nav:true,
         navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
 
         responsive:{
             0:{
-                items:1 ,
+                items:1.2,
+                nav:true
+            },
+            400:{
+                items:1.5,
                 nav:true
             },
             600:{
                 items:2,
-                nav:true
+                nav:false
+            },
+            800:{
+                items:2.5,
+                nav:false
             },
             1000:{
                 items:3,
-                nav:true
+                nav:true,
+            },
+            1200:{
+                items:4,
+                nav:true,
             }
         }
     });

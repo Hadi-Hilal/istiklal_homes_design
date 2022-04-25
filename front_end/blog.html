@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Istiklal Homes proj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" defer>
+
+  <!--- bootsrap 5-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css"
+    integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+  <!--- font awesome --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.css"
+    integrity="sha512-0vp5NeGSXVyVhWa/BuqCPMno6cznsCS/e1qIYhfSR1yPj5bqiyVjpDsSN69DYrZa2zXjpD1dd15/MekBvhspig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="blog-page">
+    <header class="bg-white p-md-2">
+        <div class="container">
+    
+            <div class="row flex-wrap">
+              <div class="col-md-1 col-xs-4">
+                <div class="header-logo">
+                  <a class="" href="#">
+                    <img class="img-fluid website-logo mt-3" src="images/logo.svg" alt="Logo" />
+                  </a>
+                </div>
+    
+                <div class="navbar-button">
+                  <button id="nav-btn" class="btn btn-outline-primary text-warn-hover "> <i class="fa-solid fa-bars"></i> </button>
+                </div>
+             
+              </div>
+    
+              <div class="col-md-11 col-xs-8">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="toper d-flex w-100 mt-3 mb-3">
+    
+    
+                      <form class="position-relative">
+                        <input class="form-control me-2 general-search text-center" type="search" placeholder="Search..."
+                          aria-label="Search">
+                        <span class="postion-absolute icon-search text-primary">
+                          <i class="fa-solid fa-search text-warn-hover"></i>
+                        </span>
+                      </form>
+    
+                      <div class="mobile-side d-flex ">
+                        <div class="mx-2">
+                          <button class="btn btn-outline-primary text-warn-hover "> <i class="fa-solid fa-globe"></i>
+                          </button>
+                        </div>
+    
+                        <div class="mx-2">
+    
+                          <button class="btn btn-outline-primary text-warn-hover"> <i class="fa-solid fa-dollar-sign"></i>
+                          </button>
+                        </div>
+                        <div class="mx-2 social-media">
+    
+                          <div class="border border-1  border-primary rounded">
+                            <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                                class="fa-brands fa-facebook-f"></i> </a> <a href="#"
+                              class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                                class="fa-brands fa-instagram"></i> </a> <a href="#"
+                              class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                                class="fa-brands fa-youtube"></i> </a> <a href="#"
+                              class="m-2 text-decoration-none text-primary text-warn-hover"> <i
+                                class="fa-brands fa-facebook-messenger"></i> </a>
+                          </div>
+                        </div>
+    
+    
+    
+                        <div class="dropdown mx-2 px-xl-3">
+                          <button class="pt-1 btn btn-outline-primary dropdown-toggle text-warn-hover" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="account"> My account</span>
+                            <i class="fa-solid fa-user"></i>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+    
+                </div>
+                <nav id="site-navbar">
+                  <i id="close-drop" class="fa-solid fa-circle-arrow-left text-danger"></i>
+    
+                  <ul class="list-unstyled" id="main-nav"> 
+                  
+                    <li class=""><a href="index.html"> Home</a></li>
+                    <li class=""><a href="project.html"> Projects</a></li>
+                    <li class=""><a href="contact.html"> Contact</a></li>
+                    <li class=""><a href="404.html"> 404</a></li>
+                    <li class=""><a href="blog.html"> Blog</a></li>
+                    <li class=""><a href="about.html"> About</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Istiklal Homes
+                      </a>
+               
+                      <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          
+    
+        </div>
+    </header>
+    <div class="container">
+        <section class="px-5 py-3 bg-white hado_border hado_box_shadow mt-3">
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="text-primary text-capitalize mb-5 mt-3">All You Need To Know About Obtaining Citizenship Through Buying A Property</h4>
+                    <a href="#"><button class="btn btn-primary px-5 py-3">for more details</button></a>
+                </div>
+                <div class="col-4">
+                    <img src="images/pas- tr.jpg" class="img-fluid float-right mt-3 pb-3" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="links mt-3">
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Featured News</span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Investment & Real Estate Ownership in Turkey
+              </span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Tourism in Turkey
+              </span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Infrastructure Projects in Turkey
+              </span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Legal affairs in Turkey
+              </span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Other News
+              </span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Turkey's Economy
+              </span>
+            </a>
+          </div>
+          <div class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+            <a href="#">
+              <img src="images/pas- tr.jpg" class="mx-5" alt="">
+              <span class="fw-bold fs-4 text-primary ">Turkish Citizenship
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <section class="px-3 py-2 bg-white hado_border hado_box_shadow mt-3">
+          <h4 class="text-primary mt-3">Turkey Properties And Turkey News</h4>
+          <p>Imtilak real estate provides the latest news about Turkey and turkey properties, investment in turkey, and everything related to foreigners affairs in turkey</p>
+          <hr>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="card">
+                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-secondary">
+                  <h5 class="card-title fw-bold">Find Out Turkey's Exhibitions For May 2022</h5>
+                  <p class="card-text">Imtilak Real Estate company presents you with an agenda of the most important exhibitions that will be held in Turkey in...</p>
+                  <div>
+                    <span class="float-left"><i class="fa-solid fa-calendar-days"></i> 2022/12/11</span>
+                    <span class="float-right"><i class="fa-solid far fa-eye"></i> 20291</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+        <div class="px-3 py-2 bg-primary hado_border hado_box_shadow mt-3">
+          <a href="#" class="p-5">
+            <h4 class="fw-bold text-white mx-5 pt-5 ">Buy Now, Pay Later</h4>
+            <p class="text-white mx-5 py-5 ">Flexible installment Apartments for sale in Turkey</p>
+          </a>
+        </div>
+
+        <section id="proj" class="featured_proj bg-white my-3 p-3 hado_border hado_box_shadow">
+          <h2 class="text-primary fw-bold"> Featured Project</h2>
+          <p class="mt-3">See The Best Real Estate For Sale In Turkey At Cheap Prices And Suitable For Real Estate Investment In The Best Real Estate Projects And The Most Important Investment Areas</p> 
+          <div class="owl-carousel">
+            <div class="card">
+              <div></div>
+              <img src="images/real.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-secondary">
+                  <h5 class="card-title mb-2 fw-bold">Galaxy Tower Project IMT-160</h5>
+                  <div class="mt-3"><i class="fa-solid fa-location text-secondary"></i> <span class="text-primary"> Istan-2bul,Yeni bosna </span> <i class="fa-solid fa-house-user text-secondary"></i> <span class="text-primary"> Apartment </span></div>
+                  <p class="card-text mt-3 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury designs and installments fo....</p>
+                  <p> Starting at <br/> <b class="text-primary fs-4"> 35.000 $</b></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3 mb-2 btn-block w-100">View more </button>
+        </section>
+        
+    </div>
+
+
+
+
+
+
+
+      <!--- footer --->
+    <footer id="contact" class="mt-3">
+        <section  class="subscripe p-3">
+          <div class="container">
+            <div class="text-center">
+              <h4 class="text-white text-capitalize mt-3 h3">Subscribe To Our Newsletter</h4>
+              <p class="text-white mt-3 mb-2 h5">Find more about the latest real estate offers</p>
+              <div class="col-lg-6 offset-lg-3 col-md-12">
+                <form>
+                  <div class="input-group mb-4 mt-4">
+                  <input type="text" class="form-control" placeholder="your email here " />
+                  <button class="btn btn-primary">subscripe</button>
+                </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-primary pt-5 pb-5">
+          <div class="container">
+            <div id="tabs-vertical">
+              <ul>
+                <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                <li><a href="#tabs-2">Nunc ncidunt</a></li>
+                <li><a href="#tabs-3">Aenean lacinia</a></li>
+                <li><a href="#tabs-4">Aenean lacinia</a></li>
+              </ul>
+              <div class="float-left">
+                <div id="tabs-1">
+                  <ul>
+                    <li>Investment In Turkey</li>
+                    <li>Turkey's Cities</li>
+                    <li>Legal Affairs</li>
+                    <li>Ownership In Turkey</li>
+                    <li>Types Of Title Deed In Turkey</li>
+                    <li>Apartment Prices In Turkey</li>
+                    <li>Investment In Turkey</li>
+                  </ul>
+                  <ul class="float-right">
+                    <li>Legal</li>
+                    <li>Legal</li>
+                    <li>Investment In Turkey</li>
+                  </ul>
+                </div>
+                <div id="tabs-2">
+                  <ul>
+                    <li>Apartments For Sale In Turkey</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Installment Apartments For Sale In Turkey</li>
+                    <li>Installment Apartments For Sale In Turkey</li>
+                    <li>Apartments For Sale In Turkey</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                  </ul>
+                  <ul class="float-right">
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                  </ul>
+                </div>
+                <div id="tabs-3">
+                  <ul>
+                    <li>Apartments For Sale In Turkey</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Installment Apartments For Sale In Turkey</li>
+                    <li>Installment Apartments For Sale In Turkey</li>
+                    <li>Apartments For Sale In Turkey</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                  </ul>
+                </div>
+                <div id="tabs-4">
+                  <ul>
+                    <li>Apartments For Sale In Turkey</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Installment Apartments For Sale In Turkey</li>
+                    <li>Installment Apartments For Sale In Turkey</li>
+                    <li>Apartments For Sale In Turkey</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                    <li>Villas For Sale In Istan-2bul</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="copyrigh  p-2">
+          <div class="container">
+            <div class="text-center">
+       
+              <p class=" mt-3 lead">
+                All Rights Reserved for Istiklal Homes -  Istiklal Homes  © 2022 
+              </p>
+            </div>
+          </div>
+        </section>
+    
+      </footer>
+    
+      <!--- footer --->
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
+        integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      <!--- font awesome -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      <script src="js/main.js" defer></script>
+</body>    
+</html>
