@@ -3,7 +3,7 @@ $(document).ready(function(){
     $( "#tabs" ).tabs();
 
     $( "#tabs-services" ).tabs();
-
+    $( "#proj-tabs" ).tabs();
     $( "#tabs-vertical" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs-vertical li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 

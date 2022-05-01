@@ -10,7 +10,7 @@
 
 :root {
   --bs-primary: #164285 !important;
-  --bs-warning: #ad901c !important;
+  --bs-warning: #aca51b !important;
   --bs-secondary: #eceff0 !important;
 }
 
@@ -28,6 +28,7 @@
   border: 1px solid var(--bs-primary);
   border-radius: 7px;
 }
+
 .hado_border {
   border: 1px solid var(--bs-secondary);
   border-radius: 8px;
@@ -46,6 +47,7 @@
 .text-primary {
   color: var(--bs-primary) !important;
 }
+
 
 .text-warning {
   color: var(--bs-warning) !important;
@@ -159,6 +161,29 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+
+.contact-said li {
+  width: 30px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--bs-primary);
+  text-align: center;
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+.st {
+  position: sticky;
+  bottom:1px ;
+  z-index: 5;
+}
+.ribbon .whatsapp {
+
+  background-color: #54e516;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 /* header */
 
 header .icon-search {
@@ -170,6 +195,9 @@ header .icon-search {
 header .general-search:focus {
   box-shadow: none !important;
   border-color: var(--bs-primary) !important;
+}
+header nav li a {
+  color: var(--bs-warning) !important;
 }
 
 .website-logo {
@@ -449,8 +477,7 @@ footer .subscripe {
 .tab {
   border-color: transparent !important;
 }
-.tab ul li {
-  box-sizing: border-box;
+.tab ul li , .proj-tabs .titles li {
   width: 50%;
   text-align: center;
   margin: 0 !important;
@@ -485,14 +512,31 @@ a {
   text-decoration: none;
 }
 
-  .contact input ,.project .said input {
-    border: none;
-    border-bottom: var(--bs-primary) 3px solid;
-    width: 90%;
-    margin: 10px;
-  }
+.my-sidebar input ,.project .said input {
+  border: none;
+  border-bottom: var(--bs-primary) 3px solid;
+  width: 90%;
+  margin: 6px;
+}
 /* project page */
+.project .said ,.my-sidebar{
+  height: 100%;
+  position: sticky;
+  top: 150px;
+  left: 0;
+  padding-top: 8px;
+}
+.project .proj-tabs .tab-body .tabs-2 a {
+  color: var(--bs-warning);
+  line-height: 25px;
+  text-decoration: underline;
 
+}
+.project .proj-tabs .tab-body  p , .project .tabs-2 li {
+  color:#6e6e6e;
+  line-height: 30px;
+  font-size: large;
+}
 
 /* 404 page */
 .content404 a {
@@ -525,12 +569,61 @@ a {
 
 /* blogpage */
 .links img {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.blog-page section:nth-child(2) a  {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .blog-page section:nth-child(3) .card p ,span {
   color:#969292;
 }
+
+/* apartment */
+.apartment .box {
+  display: inline-block;
+  width: calc(96% /5);
+  justify-content: space-between;
+}
+.apartment table {
+  width: 100%;
+  text-align: center;
+}
+.apartment table th {
+  padding: 10px;
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary);
+  border: 1px white solid;
+}
+.apartment table td {
+  padding: 10px;
+  background-color: var(--bs-secondary);
+  color: var(--bs-warning);
+  border: 1px white solid;
+}
+.apartment-tabs li {
+  width: 48%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.carousel .carousel-control-prev-icon {
+  position: absolute;
+  left: 0;
+  background-color:#070707;
+}
+.carousel .carousel-control-next-icon {
+  position: absolute;
+  right: 0;
+  background-color:#070707;
+}
+
+
+
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -587,6 +680,10 @@ a {
   .blog-page section:nth-child(3) .card img {
     height: 180px;
   }
+   /* .apartment */
+  .apartment .carousel img {
+    height: 225px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -612,6 +709,12 @@ a {
     width: 100%;
     height: 220px;
   } 
+}
+@media (max-width: 767px){
+  .apartment .box {
+    display: inline-block;
+    width: calc(98% /2);
+  }
 }
 @media (max-width: 991px){
   .said {
@@ -641,7 +744,7 @@ a {
     display: none;
   }
   /* contact */
-  .contact .said {
+  .my-sidebar {
     display: none;
   }
 }
@@ -671,6 +774,10 @@ a {
 
   #site-navbar ul li {
     display: inline-block;
+  }
+  /* .apartment */
+  .apartment .carousel img {
+    height: 425px;
   }
 }
 
