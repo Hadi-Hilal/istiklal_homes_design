@@ -6,6 +6,7 @@ $(document).ready(function(){
     $( "#proj-tabs" ).tabs();
     $( "#tabs-vertical" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs-vertical li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+    $( "#accordion" ).accordion();
 
     $( "#accordion" ).accordion();
     //botsrap price slider

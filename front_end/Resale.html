@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Istiklal Homes proj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" defer>
+
+  <!--- bootsrap 5-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css"
+    integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!--- font awesome --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.css"
+    integrity="sha512-0vp5NeGSXVyVhWa/BuqCPMno6cznsCS/e1qIYhfSR1yPj5bqiyVjpDsSN69DYrZa2zXjpD1dd15/MekBvhspig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="bg-white p-md-2">
+    <div class="container">
+
+      <div class="row flex-wrap">
+        <div class="col-md-1 col-xs-4">
+          <div class="header-logo">
+            <a class="" href="#">
+              <img class="img-fluid website-logo mt-3" src="images/logo.svg" alt="Logo" />
+            </a>
+          </div>
+
+          <div class="navbar-button">
+              <button id="nav-btn" class="btn btn-outline-primary text-warn-hover "> <i class="fa-solid fa-bars"></i> </button>
+            </div>
+
+        </div>
+
+        <div class="col-md-11 col-xs-8">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="toper d-flex w-100 mt-3 mb-3">
+
+
+                <form class="position-relative">
+                  <input class="form-control me-2 general-search border-primary py-1" type="search" placeholder="Search..."
+                    aria-label="Search">
+                  <span class="postion-absolute icon-search text-primary">
+                    <i class="fa-solid fa-search text-warn-hover"></i>
+                  </span>
+                </form>
+
+                <div class="mobile-side d-flex mx-3">
+                  <div class="mx-2">
+                    <button class="btn btn-outline-primary text-warn-hover py-1"> <i class="fa-solid fa-globe"></i>
+                    </button>
+                  </div>
+
+                  <div class="mx-2">
+
+                    <button class="btn btn-outline-primary text-warn-hover py-1"> <i class="fa-solid fa-dollar-sign"></i>
+                    </button>
+                  </div>
+                  <div class="mx-2 social-media">
+
+                    <div class="border py-1  border-primary rounded">
+                      <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i class="fa-brands fa-twitter"></i> </a>
+                      <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"><i class="fa-brands fa-telegram"></i></a>
+                      <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i class="fa-brands fa-youtube"></i></a> 
+                      <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i class="fa-brands fa-facebook-messenger"></i></a>      
+                    </div>
+                  </div>
+
+
+
+                  <div class="dropdown mx-1 px-xl-3">
+                    <button class="btn btn-outline-primary dropdown-toggle text-warn-hover py-1"type="button"
+                      id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="account px-2"> My account</span>
+                      <i class="fa-solid fa-user px-2"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <nav id="site-navbar">
+            <i id="close-drop" class="fa-solid fa-circle-arrow-left text-danger"></i>
+
+            <ul class="list-unstyled" id="main-nav">
+
+              <li class=""><a href="index.html"> Home</a></li>
+              <li class=""><a href="project.html"> Projects</a></li>
+              <li class=""><a href="contact.html"> Contact</a></li>
+              <li class=""><a href="404.html"> 404</a></li>
+              <li><a href="Resale.html">Resale</a></li>
+              <li class=""><a href="blog.html"> Blog</a></li>
+              <li class=""><a href="about.html"> About</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Istiklal Homes
+                </a>
+
+                <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row g-3 pb-3">
+        <div class="col-4 col-sm-2 col-lg-1">
+          <select class="form-select rounded hado_box_shadow px-2" aria-label="">
+            <option class="type" selected>type</option>
+            <option class="type" value="1">One</option>
+            <option class="type" value="2">Two</option>
+            <option class="type" value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-7 col-sm-5 col-lg-3">
+          <select class="form-select rounded hado_box_shadow px-2" aria-label="">
+            <option selected>property sub-category</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-4 col-sm-2 col-lg-1">
+          <select class="form-select rounded hado_box_shadow px-2" aria-label="">
+            <option selected>city</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-4 col-sm-2 col-lg-1">
+          <select class="form-select rounded hado_box_shadow px-2" aria-label="">
+            <option selected>twon</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-4 col-sm-4 col-lg-2">
+          <select class="form-select rounded hado_box_shadow px-2" aria-label="">
+            <option selected>neighborhood</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-4 col-sm-4 col-lg-2">
+          <form  action="" class="row g-3">
+                
+            <div class="col-6">
+              <input type="text" class="form-control hado_border hado_box_shadow"placeholder="min">
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control hado_border hado_box_shadow" placeholder="max">
+            </div>
+          </form>
+        </div>
+        
+        <!-- <input type="text" class="col-3 col-sm-2 col-lg-1 hado_border hado_box_shadow rounded" placeholder="min" name="" id="">
+      
+        
+        <input type="text" class="col-3 col-sm-2 col-lg-1 mx-3 hado_border hado_box_shadow rounded" placeholder="max" name="" id=""> -->
+      
+        <div class="col-3 col-sm-2 col-md-1">
+        <a href="#"><button class="btn btn-warning">search</button></a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </header>
+
+  <!--- Header --->
+
+
+
+
+
+  <div class="container mt-3 mb-3">
+    <div class="result bg-white mb-3 p-3 hado_border">
+      <div class="row">
+        <div class="col-md-5">
+          <span>properties found: 100</span>
+        </div>
+        <div class="col-md-7">
+          <span class="fw-bold mt-2">sort by:</span>
+          <span>
+            <a href="#" class="bg-warning text-white p-1 rounded mx-1">price</a>
+            <a href="#" class="bg-warning text-white p-1 rounded mx-1">Recently Added</a>
+            <a href="#" class="bg-warning text-white p-1 rounded mx-1">space</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card hado_border jack_box_shadow mb-3">
+          <a href="#" class="text-dark">
+            <div class="position-relative">
+              <span class="span">april 2022</span>
+              <img src="images/basak sehir.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body p-3">
+              <h5 class="card-title mb-2 fw-bold ">Istanbul Basaksehir Residential Homes For Resale 2 + 1</h5>
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istanbul,Basaksehir </span> <i class="fa-solid fas fa-house-damage text-primary"></i> <span
+                  class="text-warning"> 128 m² </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+                designs and installments fo....</p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 350.000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      
+
+
+
+    
+    </div>
+  </div>
+
+
+    <!--- footer --->
+    <footer id="contact" class="mt-3 bg-primary">
+      <div class="footer-overlay"> </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="py-2  position-relative" style="z-index: 5;">
+              <h4>Istklal Homse Real Estate</h4>
+              <p class="text-white">Istiklal Homes has more than 10 years of work experience committed to professionalism,
+                honesty and credibility in business and in the real estate field for clients ....</p>
+              <ul class="list-unstyled">
+                <li><i class="fa-solid fa-location-dot text-gold"></i><a href="#"> Mahmutbey mahallesi 2414. sokak No: 5
+                    istoç tepe plaza ofis No: 30 Bağcılar Istanbul، Turkey</a></li>
+                <li><i class="fa-solid fa-phone text-gold"></i><a href="#"> + 90 (549) 102 55 04</a></li>
+                <li><i class="fa-solid fa-square-envelope text-gold"></i><a href="#"> info@istiklalhomes.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="py-2  position-relative" style="z-index: 5;">
+              
+              <h4 class="">Turkey Properties</h4>
+              
+              <ul class="list-unstyled position-relative" style="z-index: 5;">
+                <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
+                <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
+                <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
+                <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
+                <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
+                <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="col-md-3">
+            <div class="footer-logo" >
+              <a href="#"><img src="images/logo.svg" class="mt-5 bg-white p-3  position-relative" style="z-index: 5;" alt=""></a>
+              <div class="position-relative mt-3">
+                <a href="#" class="bg-warning rounded p-1">terms and conditions</a>
+                <a href="#" class="bg-warning rounded mx-1 p-1">privacy</a>
+                <a href="#" class="bg-warning rounded p-1">Faq</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+   
+      <div class="text-center footer-media mb-3  position-relative" style="z-index: 5;">
+        <a href="#"><i class="fa-brands fa-facebook-f text-gold"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram text-gold"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube text-gold"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-messenger text-gold"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter text-gold"></i></a>
+      </div>
+      <p class="text-gold text-center  mb-0 py-3  position-relative" style="z-index: 5;">
+        All Rights Reserved for Istiklal Homes - Istiklal Homes © 2022
+      </p>
+  
+   
+    </footer>
+  
+    <!--- footer --->
+
+
+
+
+  <div class="st">
+    <div class="ribbon position-relative d-lg-none">
+      <a href="#" class="whatsapp position-absolute start-50 translate-middle "><i
+          class="fa-brands fa-whatsapp text-white fs-2 heartbeat"></i></a>
+      <div class="d-flex bg-dark py-3 justify-content-between px-5">
+        <a href="#"><i class="fa-solid fa-magnifying-glass text-white"></i></a>
+        <a href="#"><i class="fa-solid fa-align-justify text-white"></i></a>
+        <a href="#"><i class="fa-solid fa-comments text-white"></i></a>
+        <a href="#"><i class="fa-solid fa-share-nodes text-white"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
+    integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--- font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
