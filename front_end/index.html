@@ -56,7 +56,7 @@
 
 
                 <form class="position-relative">
-                  <input class="form-control me-2 general-search border-primary py-1" type="search" placeholder="Search..."
+                  <input class="form-control me-2 general-search border-primary py-1"  placeholder="Search..."
                     aria-label="Search">
                   <span class="postion-absolute icon-search text-primary">
                     <i class="fa-solid fa-search text-warn-hover"></i>
@@ -64,18 +64,32 @@
                 </form>
 
                 <div class="mobile-side d-flex mx-3">
-                  <div class="mx-2">
-                    <button class="btn btn-outline-primary text-warn-hover py-1"> <i class="fa-solid fa-globe"></i>
+                  <div class="mx-2  dropdown">
+                    <button class="btn btn-outline-primary text-warn-hover py-1" type="button" id="dropdownMenulang" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-globe"></i>
                     </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenulang">
+                      <a href="#" class="dropdown-item px-2"><img src="images/uk.png" alt=""><span>English</span></a>
+                      <a href="#" class="dropdown-item px-2"><img src="images/saudi-arabia.png" alt=""><span>Arabic</span></a>
+                    </div>
                   </div>
 
-                  <div class="mx-2">
-
-                    <button class="btn btn-outline-primary text-warn-hover py-1"> <i class="fa-solid fa-dollar-sign"></i>
+                  <div class="mx-2 dropdown">
+                    <button class="btn btn-outline-primary text-warn-hover py-1"  id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      <i class="fa-solid fa-dollar-sign"></i>
                     </button>
+                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenu2">
+                      <a href="#" class="dropdown-item p-0"><img src="images/usa.png" alt="">
+                        <span>USD</span></a>
+                        <a href="#" class="dropdown-item p-0"><img src="images/european-union.png" alt="">
+                          <span>EUR</span></a>
+                      <a href="#" class="dropdown-item p-0"><img src="images/turkey.png" alt="">
+                        <span>TRY</span></a>
+                      
+                    </div>
                   </div>
+
                   <div class="mx-2 social-media">
-
                     <div class="border py-1  border-primary rounded">
                       <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"><i class="fa-brands fa-facebook-f"></i></a>
                       <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i class="fa-brands fa-twitter"></i> </a>
@@ -86,18 +100,26 @@
                     </div>
                   </div>
 
-
+                  
 
                   <div class="dropdown mx-1 px-xl-3">
-                    <button class="btn btn-outline-primary dropdown-toggle text-warn-hover py-1"type="button"
-                      id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-outline-primary text-warn-hover py-1 dropdown-toggle"  id="dropdownaccount" data-bs-toggle="dropdown" aria-expanded="false"> 
                       <span class="account px-2"> My account</span>
                       <i class="fa-solid fa-user px-2"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownaccount">
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Personal data</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>favorites list</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>sign in</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -115,19 +137,29 @@
               <li class=""><a href="project.html"> Projects</a></li>
               <li class=""><a href="contact.html"> Contact</a></li>
               <li class=""><a href="404.html"> 404</a></li>
+              <li><a href="Resale.html">Resale</a></li>
               <li class=""><a href="blog.html"> Blog</a></li>
-              <li class=""><a href="about.html"> About</a></li>
+              <li><a href="faq.html">Faq</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdownabout" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownabout">
+                  <a class="dropdown-item text-dark" href="job.html">job vacancies</a>
+                  <a class="dropdown-item text-dark" href="application.html">applicition form</a>
+                  <a class="dropdown-item text-dark" href="Our Vision.html">our vision for employment</a>
+                </div>
+              </li>
               <li class="dropdown">
                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Istiklal Homes
                 </a>
 
-                <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-dark" href="#">Action</a>
+                  <a class="dropdown-item text-dark" href="#">Another action</a>
+                  <a class="dropdown-item text-dark" href="#">Something else here</a>
+                </div>
               </li>
             </ul>
           </nav>
@@ -150,9 +182,9 @@
             <h4 class="p-10 fw-bold mx-4 mt-3 text-center text-warning"> Search for your apartment</h4>
             <div class="dropdowns">
               <div class="dropdown">
-                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">choose city </button>
-                <ul class="dropdown-menu scroller" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu scroller bg-white" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">istan-2bul</a></li>
                   <li><a class="dropdown-item" href="#">trabzon</a></li>
                   <li><a class="dropdown-item" href="#">ankara</a></li>
@@ -170,7 +202,7 @@
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">choos twon </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu scroller bg-white" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
@@ -182,7 +214,7 @@
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">choos type</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu bg-white" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
@@ -194,7 +226,7 @@
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">choos additional </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu bg-white" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
@@ -205,23 +237,29 @@
               </div>
             </div>
 
-            <div class="rangs mt-4 mb-2 text-center">
-
-              <div class="range">
-                <label for="customRange2" class="form-label d-block">price</label>
-                <input type="range" min="10" max="1000" step="10" value="300" data-orientation="vertical">
-
-              </div>
-
-              <div class="range">
-                <label for="customRange2" class="form-label d-block">space</label>
-                <input type="range" min="10" max="1000" step="10" value="300" data-orientation="vertical">
-
-              </div>
-
+            <div class="rangs mt-1 mb-1 text-center">
+              <div class="text-center mb-2 text-warning">price</div>
+              <form  action="" class="row g-3">
+                <div class="col-6">
+                  <input type="text" class="form-control hado_border hado_box_shadow" id="inputPassword2" placeholder="min">
+                </div>
+                <div class="col-6">
+                  
+                  <input type="text" class="form-control hado_border hado_box_shadow" id="inputPassword2" placeholder="max">
+                </div>
+              </form>
+              <div class="text-center mb-2 mt-2 text-warning">space</div>
+              <form  action="" class="row g-3">
+                <div class="col-6">
+                  <input type="text" class="form-control hado_border hado_box_shadow"placeholder="min">
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control hado_border hado_box_shadow" placeholder="max">
+                </div>
+              </form>
             </div>
 
-            <button class="btn btn-primary mt-3 mb-5 btn-block w-100">search</button>
+            <button class="btn btn-primary mt-3 mb-2 btn-block w-100">search</button>
           </div>
         </div>
         <div class="col-12 col-lg-9 col-md-12 col-xs-12">
@@ -293,16 +331,18 @@
 
         <div class="owl-carousel">
           <div class="card">
-            <div></div>
+            
             <a href="apartment.html"><img src="images/real.jpg" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h5 class="card-title mb-2 fw-bold">Galaxy Tower Project IMT-160</h5>
-              <div class="mt-3"><i class="fa-solid fa-location text-warning"></i> <span class="text-primary">
-                  Istan-2bul,Yeni bosna </span> <i class="fa-solid fa-house-user text-warning"></i> <span
-                  class="text-primary"> Apartment </span></div>
-              <p class="card-text mt-3 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
+              <div class="mt-2"><i class="fa-solid fa-location text-primary"></i> <span class="text-warning ">
+                  Istan-2bul,Yeni bosna </span> <i class="fa-solid fa-house-user text-primary"></i> <span
+                  class="text-warning"> Apartment </span></div>
+              <p class="card-text mt-2 mb-2">Apartments for sale on Basin Express within Galaxy tower project, luxury
                 designs and installments fo....</p>
-              <p> Starting at <br /> <b class="text-warning fs-4"> 35.0000 $</b></p>
+              <p class="mb-0"> Starting at <br /> <b class="text-warning fs-4"> 35.0000 $</b> 
+                <span class=" float-right"><i class="fa-solid fa-heart text-warning"></i></span>
+              </p>
             </div>
           </div>
         </div>
@@ -325,7 +365,6 @@
                 <h5 class="text-dark mt-2 mb-1 fw-bold"> Alena Rony</h5>
                 <span class="text-warning h6"> USA </span>
               </div>
-
             </div>
             <div class="card-body">
               <p class="card-text mt-3 mb-2">
@@ -751,33 +790,33 @@
         </div>
       </section>
 
-      <section class="bg-white p-5">
+      <section class="bg-white p-4">
         <div class="row">
-          <p class="text-warning fw-bold">Contact us and ask for your real estate advice</p>
+         
           <div class="col-md-5 mb-2">
+            <p class="text-warning fw-bold">Contact us and ask for your real estate advice</p>
             <form action="" class="p-4 bg-primary hado_border">
               <div class="mb-4">
-                <input type="text" class="form-control" id="exampleFormControlInput1" required placeholder="name">
+                <input type="text" class="form-control p-2" id="exampleFormControlInput1" required placeholder="name">
               </div>
               <div class="mb-4">
-                <input type="number" class="form-control" id="exampleFormControlInput1" required placeholder="number">
+                <input type="number" class="form-control p-2" id="exampleFormControlInput1" required placeholder="number">
               </div>
               <div class="mb-4">             
-                <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="email">
+                <input type="email" class="form-control p-2" id="exampleFormControlInput1" required placeholder="email">
               </div>
 
               <div class="row">
                 <div class="col-md-6">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="country">
+                  <input type="text" class="form-control p-2 mb-3" id="exampleFormControlInput1" placeholder="country">
                 </div>
                 <div class="col-md-6">
-                  <button type="submit" class="btn btn-danger w-100">Sign in</button>
+                  <button type="submit" class="btn btn-danger w-100 p-2 ">Sign in</button>
                 </div>
               </div>
             </form>
           </div>
-          <div class="col-md-7 call-center text-center">
-            <img src="images/call center 2.jpg" class="img-fluid" alt="">
+          <div class="col-md-7 pl- call-center">
           </div>
         </div>
       </section>
@@ -786,7 +825,7 @@
   </div>
 
 
-  <!-- <div class=" contact-said m-5">
+  <div class=" contact-said m-5">
     <i class="fa-solid fa-comment-dots bg-primary p-2 rounded text-white"></i>
     <ul class="list-unstyled">
       <li><i class="fa-brands fa-whatsapp text-white"></i></li>
@@ -794,7 +833,7 @@
       <li><i class="fa-solid fa-phone text-white"></i></li>
       <li><i class="fa-solid fa-pen-to-square text-white"></i></li>
     </ul>
-  </div> -->
+  </div>
 
 
 
@@ -804,7 +843,7 @@
     <div class="footer-overlay"> </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="py-2  position-relative" style="z-index: 5;">
             <h4>Istklal Homse Real Estate</h4>
             <p class="text-white">Istiklal Homes has more than 10 years of work experience committed to professionalism,
@@ -817,12 +856,12 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="py-2 px-5 position-relative" style="z-index: 5;">
+        <div class="col-md-4">
+          <div class="py-2  position-relative" style="z-index: 5;">
             
             <h4 class="">Turkey Properties</h4>
             
-            <ul class="list-unstyled position-relative" style="z-index: 5;">
+            <ul class="list-unstyled position-relative mb-0" style="z-index: 5;">
               <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
               <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
               <li><i class="fa-solid fa-link text-gold"></i><a href="#">Installment Apartments For Sale In Turkey</a></li>
@@ -834,8 +873,15 @@
         </div>
   
         <div class="col-md-3">
-          <div class="py-2 text-center" >
-            <a href="#"><img src="images/logo.svg" class="mt-5 footer-logo  position-relative" style="z-index: 5;" alt=""></a>
+          <div class="footer-logo" >
+            <a href="#"><img src="images/is-logo.png" class="p-3  position-relative" style="z-index: 5;" alt=""></a>
+            <div class="position-relative  mt-1">
+              <ul class="list-unstyled ">
+                <li><a href="#" class="text-gold fw-bold">terms and conditions</a></li>
+                <li><a href="#" class="text-gold fw-bold">privacy</a></li>
+                <li><a href="#" class="text-gold fw-bold">Faq</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

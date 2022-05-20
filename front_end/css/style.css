@@ -12,7 +12,7 @@
   --bs-primary: #164285 !important;
   --bs-warning: #bd8800 !important;
   --bs-secondary: #eceff0 !important;
-  --bs-gold-color:#c7a835;
+  --bs-gold-color:#efd097;
 }
 
 .text-gold  {
@@ -42,6 +42,7 @@ background: linear-gradient(90deg, rgba(189,136,0,1) 8%, rgba(135,101,49,1) 73%)
   border-radius: 8px;
 }
 
+
 .img-border {
   width: 50px !important;
   height: 50px;
@@ -49,6 +50,10 @@ background: linear-gradient(90deg, rgba(189,136,0,1) 8%, rgba(135,101,49,1) 73%)
 }
 .hado_box_shadow {
   box-shadow: 3px 3px 3px var(--bs-secondary);
+}
+
+.jack_box_shadow {
+  box-shadow: 1px 1px 1px  var(--bs-warning);
 }
 
 /* rules => text */
@@ -75,6 +80,9 @@ background: linear-gradient(90deg, rgba(189,136,0,1) 8%, rgba(135,101,49,1) 73%)
 .text-primary-hover:hover {
   color: var(--bs-primary) !important;
   opacity: 0.9;
+}
+.text-gold:hover {
+  color: var(--bs-gold-color);
 }
 
 /* rules => text */
@@ -162,6 +170,7 @@ background: linear-gradient(90deg, rgba(189,136,0,1) 8%, rgba(135,101,49,1) 73%)
   top: 0;
   left: 0;
   color: white;
+  border-radius: 0 0 10px 0;
   z-index: 4;
 }
 
@@ -172,6 +181,10 @@ background: linear-gradient(90deg, rgba(189,136,0,1) 8%, rgba(135,101,49,1) 73%)
 body {
   background-color: #eee;
   font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -200,6 +213,20 @@ body {
 }
 
 /* header */
+header .dropdown-menu {
+  min-width: 5rem !important;
+  padding: 0;
+}
+header .dropdown-menu span {
+  font-size:small;
+  padding-left: 5px;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.btn-outline-primary.dropdown-toggle.show {
+  background-color: white !important;
+}
 
 header .icon-search {
   position: absolute;
@@ -215,6 +242,7 @@ header nav li a {
   color: var(--bs-warning) !important;
 }
 
+
 .website-logo {
   height: 100px;
   width: 100px;
@@ -227,7 +255,7 @@ header nav li a {
 .said-content .dropdown button {
   width: 100%;
   border: transparent 1px solid;
-  background-color: rgb(243, 240, 240);
+  background-color: var(--bs-secondary);
   font-weight: 400;
   text-align: start;
   position: relative;
@@ -493,25 +521,28 @@ header {
   text-align: center;
   margin: 0 !important;
 }
-.call-center img {
-  height: 270px;
-  width: 90%;
+.call-center {
+  background-image: url('../images/call-center.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius:8px;
 }
 
 footer .row h4 {
   margin-bottom: 10px;
-  color: var(--bs-gold-color);
+  color:#efd097;
   padding: 10px;
 }
 
 
 
-footer ul a {
-  color: var(--bs-secondary);
+footer  a {
+  color: white;
   line-height: 35px;
   padding-left: 5px;
+
 }
-footer ul a:hover {
+footer  a:hover {
   color: var(--bs-gold-color);
 }
 .footer-media a {
@@ -522,10 +553,11 @@ footer ul a:hover {
 
 }
 
-.footer-logo {
-  height: 250px;
-  width: 250px;
+.footer-logo img {
+  height: 220px;
+  width: 180px;
 }
+
 footer{
   background-image: url('../images/footer.jpg');
   background-size: cover;
@@ -539,13 +571,13 @@ footer{
   width: 100%;
   top: 0;
   right: 0;
-  background-color: rgb(22 66 133 / 60%);
+  background-color: rgb(22 66 133 / 75%);
   z-index: 0;
 }
 
 
 /* contact page */
-a {
+.contact .Offices a {
   text-decoration: none;
   color: var(--bs-warning);
 }
@@ -617,8 +649,64 @@ a {
   flex-wrap: nowrap;
   align-items: center;
 }
-.blog-page section:nth-child(3) .card p ,span {
 
+/* job page */
+.h-job {
+  background-image: url("../images/bg-job.jpg");
+  padding: 60px 0;
+  background-size: cover;
+  background-position: center center;
+}
+/* our Vision page */
+.bg-Vision {
+  background-image: url("../images/company.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  align-items: center;
+}
+.key-links a {
+  width: calc(95% / 4);
+}
+
+ /* resale page */
+
+.form-select:focus {
+  box-shadow: none !important;
+  border-color: var(--bs-secondary);
+}
+
+input:focus {
+  box-shadow: none !important;
+  border-color: var(--bs-secondary) !important;
+}
+
+
+/* faq page */
+.ui-helper-reset {
+  border: none ;
+}
+.ui-helper-reset h3 {
+  border: none;
+  color: var(--bs-warning);
+  background-color: white;
+  font-size:x-large !important;
+}
+
+
+.ui-icon {
+  background-image: url("../images/plus.png");
+  margin-right: 10px;
+}
+.ui-state-hover  .ui-icon, .ui-state-active .ui-icon, .ui-button:active .ui-icon {
+
+  background-image: url("../images/plus.png");
+ 
+}
+
+
+.ui-icon-triangle-1-e {
+  background-position: 0;
 }
 
 /* apartment */
@@ -849,6 +937,11 @@ a {
   }
   .services {
     display: none;
+  }
+  
+  footer .footer-logo img {
+    text-align: center;
+    margin-bottom: 10px;
   }
   
   /* contact */
