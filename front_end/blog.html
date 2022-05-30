@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css"
     integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!--- font awesome --->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -22,19 +22,22 @@
     integrity="sha512-0vp5NeGSXVyVhWa/BuqCPMno6cznsCS/e1qIYhfSR1yPj5bqiyVjpDsSN69DYrZa2zXjpD1dd15/MekBvhspig=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/rtl.css">
 </head>
 
-<body class="blog-page">
+<body>
+
   <header class="bg-white p-md-2">
-    
     <div class="container">
 
       <div class="row flex-wrap">
-        <div class="col-md-1 col-xs-4">
+        <div class="col-md-1">
           <div class="header-logo">
             <a class="" href="#">
               <img class="img-fluid website-logo mt-3" src="images/logo.svg" alt="Logo" />
@@ -47,14 +50,14 @@
 
         </div>
 
-        <div class="col-md-11 col-xs-8">
+        <div class="col-md-11 px-5">
           <div class="row">
             <div class="col-md-12">
               <div class="toper d-flex w-100 mt-3 mb-3">
 
 
                 <form class="position-relative">
-                  <input class="form-control me-2 general-search border-primary py-1" type="search" placeholder="Search..."
+                  <input class="form-control me-2 general-search border-primary py-1"  placeholder="Search..."
                     aria-label="Search">
                   <span class="postion-absolute icon-search text-primary">
                     <i class="fa-solid fa-search text-warn-hover"></i>
@@ -62,18 +65,32 @@
                 </form>
 
                 <div class="mobile-side d-flex mx-3">
-                  <div class="mx-2">
-                    <button class="btn btn-outline-primary text-warn-hover py-1"> <i class="fa-solid fa-globe"></i>
+                  <div class="mx-2  dropdown">
+                    <button class="btn btn-outline-primary text-warn-hover py-1" type="button" id="dropdownMenulang" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-globe"></i>
                     </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenulang">
+                      <a href="#" class="dropdown-item px-2"><img src="images/uk.png" alt=""><span>English</span></a>
+                      <a href="#" class="dropdown-item px-2"><img src="images/saudi-arabia.png" alt=""><span>Arabic</span></a>
+                    </div>
                   </div>
 
-                  <div class="mx-2">
-
-                    <button class="btn btn-outline-primary text-warn-hover py-1"> <i class="fa-solid fa-dollar-sign"></i>
+                  <div class="mx-2 dropdown">
+                    <button class="btn btn-outline-primary text-warn-hover py-1"  id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      <i class="fa-solid fa-dollar-sign"></i>
                     </button>
+                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenu2">
+                      <a href="#" class="dropdown-item p-0"><img src="images/usa.png" alt="">
+                        <span>USD</span></a>
+                        <a href="#" class="dropdown-item p-0"><img src="images/european-union.png" alt="">
+                          <span>EUR</span></a>
+                      <a href="#" class="dropdown-item p-0"><img src="images/turkey.png" alt="">
+                        <span>TRY</span></a>
+                      
+                    </div>
                   </div>
+
                   <div class="mx-2 social-media">
-
                     <div class="border py-1  border-primary rounded">
                       <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"><i class="fa-brands fa-facebook-f"></i></a>
                       <a href="#" class="m-2 text-decoration-none text-primary text-warn-hover"> <i class="fa-brands fa-twitter"></i> </a>
@@ -84,18 +101,30 @@
                     </div>
                   </div>
 
-
+                  
 
                   <div class="dropdown mx-1 px-xl-3">
-                    <button class="btn btn-outline-primary dropdown-toggle text-warn-hover py-1"type="button"
-                      id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-outline-primary text-warn-hover py-1 dropdown-toggle"  id="dropdownaccount" data-bs-toggle="dropdown" aria-expanded="false"> 
                       <span class="account px-2"> My account</span>
                       <i class="fa-solid fa-user px-2"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownaccount">
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <span>admin panel</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Personal data</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>favorites list</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>sign in</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -109,23 +138,33 @@
 
             <ul class="list-unstyled" id="main-nav">
 
-              <li class=""><a href="index.html"> Home</a></li>
+              <li class="menu-active"><a href="index.html"> Home</a></li>
               <li class=""><a href="project.html"> Projects</a></li>
               <li class=""><a href="contact.html"> Contact</a></li>
               <li class=""><a href="404.html"> 404</a></li>
+              <li><a href="Resale.html">Resale</a></li>
               <li class=""><a href="blog.html"> Blog</a></li>
-              <li class=""><a href="about.html"> About</a></li>
+              <li><a href="faq.html">Faq</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdownabout" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownabout">
+                  <a class="dropdown-item text-dark" href="job.html">job vacancies</a>
+                  <a class="dropdown-item text-dark" href="application.html">applicition form</a>
+                  <a class="dropdown-item text-dark" href="Our Vision.html">our vision for employment</a>
+                </div>
+              </li>
               <li class="dropdown">
                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Istiklal Homes
                 </a>
 
-                <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-dark" href="#">Action</a>
+                  <a class="dropdown-item text-dark" href="#">Another action</a>
+                  <a class="dropdown-item text-dark" href="#">Something else here</a>
+                </div>
               </li>
             </ul>
           </nav>
@@ -136,6 +175,9 @@
     </div>
 
   </header>
+
+  <!--- Header --->
+
     <div class="container">
         <section class="px-5 py-3 bg-white hado_border hado_box_shadow mt-3">
             <div class="row">
