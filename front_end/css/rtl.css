@@ -1,0 +1,64 @@
+:root {
+    direction: rtl;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    font-family: 'Work Sans', sans-serif;;
+}
+.float-right {
+    float: left !important;
+}
+.float-left {
+    float: right !important;
+}
+
+header .icon-search {
+    position: absolute;
+    right: auto;
+    left: 10px;
+    top: 7px;
+}
+
+.said .dropdowns .dropdown-toggle::before {
+    right: auto;
+    left: 0;
+    border-radius: 5px 0 0 5px;
+}
+.dropdowns .dropdown-toggle::after {
+    right:auto;
+    left: 12px;
+    top: 15px;
+}
+
+.blog .title {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 20px;
+    color: white;
+    z-index: 4;
+}
+/* resale page */
+.form-select {
+    background-position: left 0.75rem center !important;
+}
+.navbar-brand {
+    margin-right: 0 !important;
+}
+@media (min-width: 992px) {
+    .landing .navbar-nav {
+        margin-left: 0  !important;
+        margin-right: 100px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .landing .navbar-collapse {
+        margin-left: 0 !important;
+        margin-right: 100px !important;
+    }
+}
+
+
+
